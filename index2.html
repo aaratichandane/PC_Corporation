@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Studio</title>
+
+  <!-- Google Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    header {
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #020617;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin-left: 1.5rem;
+      text-decoration: none;
+    }
+
+    nav a:hover { color: #38bdf8; }
+
+    /* Hero */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #020617, #0f172a);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    .hero button {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border: none;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    /* Services */
+    section {
+      padding: 4rem 3rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h3 {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #020617;
+      padding: 2rem;
+      border-radius: 16px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    .card i {
+      font-size: 2rem;
+      color: #38bdf8;
+      margin-bottom: 1rem;
+    }
+
+    /* Contact */
+    .contact-box {
+      max-width: 600px;
+      margin: auto;
+      background: #020617;
+      padding: 2rem;
+      border-radius: 16px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: none;
+    }
+
+    button.submit {
+      width: 100%;
+      background: #38bdf8;
+      color: #020617;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 999px;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #020617;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><i class="fa-solid fa-wand-magic-sparkles"></i> Creative Studio</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h2>Design. Code. Impact.</h2>
+    <p>
+      We help brands and startups transform ideas into visually stunning and highly usable digital products.
+    </p>
+    <button>Start a Project</button>
+  </div>
+</div>
+
+<section id="services">
+  <h3>What We Do</h3>
+  <div class="services">
+    <div class="card">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h4>UI / UX Design</h4>
+      <p>Interfaces that feel natural, intuitive, and delightful.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-code"></i>
+      <h4>Web Development</h4>
+      <p>Fast, scalable websites built with modern standards.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-bolt"></i>
+      <h4>Brand Identity</h4>
+      <p>Logos and visual systems that make brands memorable.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Let’s Talk</h3>
+  <div class="contact-box">
+    <input type="text" placeholder="Your Name" />
+    <input type="email" placeholder="Your Email" />
+    <textarea rows="4" placeholder="Tell us about your idea"></textarea>
+    <button class="submit">Send Message</button>
+  </div>
+</section>
+
+<footer>
+  © 2026 Creative Studio · Crafted with purpose
+</footer>
+
+</body>
+</html>

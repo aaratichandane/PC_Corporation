@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Company Website</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f4f6f8;
+    }
+
+    header {
+      background: #1f2933;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Carousel */
+    .carousel {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: none;
+      color: #fff;
+      text-align: center;
+      padding-top: 120px;
+      font-size: 2rem;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    /* Sections */
+    section {
+      padding: 3rem 2rem;
+      background: #fff;
+      margin: 1rem auto;
+      max-width: 1000px;
+      border-radius: 8px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature {
+      background: #f9fafb;
+      padding: 1.5rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .feature i {
+      font-size: 2rem;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1f2933;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><i class="fa-solid fa-globe"></i> MyCompany</h1>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<!-- Carousel -->
+<div class="carousel">
+  <div class="slide active" style="background:#2563eb">We Build Simple & Powerful Websites</div>
+  <div class="slide" style="background:#16a34a">Focused on User Experience</div>
+  <div class="slide" style="background:#9333ea">Designed for Growth</div>
+</div>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    We are a passionate team focused on building clean, user-friendly, and scalable web solutions.
+    Our philosophy is simple: <strong>technology should solve real problems, not create new ones</strong>.
+  </p>
+
+  <div class="features">
+    <div class="feature">
+      <i class="fa-solid fa-lightbulb"></i>
+      <h3>Clear Thinking</h3>
+      <p>Every feature exists for a reason. Simplicity beats complexity.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-users"></i>
+      <h3>User First</h3>
+      <p>We design with real users in mind, not just screens.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-rocket"></i>
+      <h3>Future Ready</h3>
+      <p>Our solutions are built to grow with your business.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center">
+    Have an idea or a problem to solve? We would love to hear from you.
+  </p>
+
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 MyCompany | Built with clarity & purpose</p>
+</footer>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 3000);
+</script>
+
+</body>
+</html>
