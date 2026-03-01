@@ -3,209 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Company Website</title>
+  <title>P & C CORPORATION LLP</title>
 
-  <!-- Font Awesome Icons -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- WhatsApp Preview -->
+  <meta property="og:title" content="P & C CORPORATION LLP" />
+  <meta property="og:description" content="Manufacturers and Authorized Distributors of Manhole Covers, Pipes, Gratings & Infrastructure Products" />
+  <meta property="og:type" content="website" />
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #111827;
       line-height: 1.6;
-      background: #f4f6f8;
     }
 
     header {
-      background: #1f2933;
-      color: #fff;
-      padding: 1rem 2rem;
+      background: #0f172a;
+      color: white;
+      padding: 1.5rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
     }
 
     header h1 {
       margin: 0;
+      font-size: 1.4rem;
     }
 
     nav a {
-      color: #fff;
-      margin-left: 1rem;
+      color: #e5e7eb;
+      margin-left: 1.2rem;
       text-decoration: none;
       font-weight: bold;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { color: #38bdf8; }
 
-    /* Carousel */
-    .carousel {
-      position: relative;
-      height: 300px;
-      overflow: hidden;
-      background: #000;
-    }
-
-    .slide {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: none;
-      color: #fff;
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #020617, #1e293b);
+      color: white;
+      padding: 4rem 2rem;
       text-align: center;
-      padding-top: 120px;
-      font-size: 2rem;
-      background-size: cover;
-      background-position: center;
     }
 
-    .slide.active {
-      display: block;
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
     /* Sections */
     section {
+      max-width: 1200px;
+      margin: auto;
       padding: 3rem 2rem;
-      background: #fff;
-      margin: 1rem auto;
-      max-width: 1000px;
-      border-radius: 8px;
     }
 
-    section h2 {
+    section h3 {
       text-align: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      color: #0f172a;
     }
 
-    .features {
+    /* Products */
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
     }
 
-    .feature {
-      background: #f9fafb;
+    .card {
+      background: white;
       padding: 1.5rem;
-      border-radius: 6px;
-      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    .feature i {
+    .card i {
       font-size: 2rem;
       color: #2563eb;
       margin-bottom: 0.5rem;
     }
 
-    /* Contact Form */
-    form {
-      max-width: 600px;
-      margin: auto;
+    /* Contact */
+    .contact {
+      background: #e5e7eb;
+      border-radius: 12px;
+      padding: 2rem;
     }
 
-    form input, form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-
-    form button {
-      width: 100%;
-      padding: 0.75rem;
-      background: #2563eb;
-      color: #fff;
-      border: none;
-      font-size: 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    form button:hover {
-      background: #1e40af;
+    .contact p {
+      margin: 0.4rem 0;
     }
 
     footer {
+      background: #0f172a;
+      color: #e5e7eb;
       text-align: center;
-      padding: 1rem;
-      background: #1f2933;
-      color: #fff;
+      padding: 1.5rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1><i class="fa-solid fa-globe"></i> MyCompany</h1>
+  <h1><i class="fa-solid fa-industry"></i> P & C CORPORATION LLP</h1>
   <nav>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact Us</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<!-- Carousel -->
-<div class="carousel">
-  <div class="slide active" style="background:#2563eb">We Build Simple & Powerful Websites</div>
-  <div class="slide" style="background:#16a34a">Focused on User Experience</div>
-  <div class="slide" style="background:#9333ea">Designed for Growth</div>
+<div class="hero">
+  <h2>Infrastructure Products You Can Trust</h2>
+  <p>Manufacturers & Authorized Distributors of Pipes, Manhole Covers, Gratings and Allied Products</p>
 </div>
 
 <section id="about">
-  <h2>About Us</h2>
+  <h3>About Us</h3>
   <p>
-    We are a passionate team focused on building clean, user-friendly, and scalable web solutions.
-    Our philosophy is simple: <strong>technology should solve real problems, not create new ones</strong>.
+    <strong>P & C CORPORATION LLP</strong> is engaged in manufacturing and distribution of high‑quality infrastructure and construction products. With decades of industry experience, we focus on durability, safety, and compliance with industry standards.
   </p>
+</section>
 
-  <div class="features">
-    <div class="feature">
-      <i class="fa-solid fa-lightbulb"></i>
-      <h3>Clear Thinking</h3>
-      <p>Every feature exists for a reason. Simplicity beats complexity.</p>
-    </div>
-    <div class="feature">
-      <i class="fa-solid fa-users"></i>
-      <h3>User First</h3>
-      <p>We design with real users in mind, not just screens.</p>
-    </div>
-    <div class="feature">
-      <i class="fa-solid fa-rocket"></i>
-      <h3>Future Ready</h3>
-      <p>Our solutions are built to grow with your business.</p>
-    </div>
+<section id="products">
+  <h3>Our Products</h3>
+  <div class="grid">
+    <div class="card"><i class="fa-solid fa-circle"></i><h4>FRP Manhole Covers & Gratings</h4></div>
+    <div class="card"><i class="fa-solid fa-circle"></i><h4>SFRC / RCC Manhole Covers & Gratings</h4></div>
+    <div class="card"><i class="fa-solid fa-circle"></i><h4>Cast Iron & Ductile Iron Covers</h4></div>
+    <div class="card"><i class="fa-solid fa-circle"></i><h4>RCC Hume Pipes</h4></div>
+    <div class="card"><i class="fa-solid fa-circle"></i><h4>Supreme PVC Pipes & Fittings</h4></div>
+    <div class="card"><i class="fa-solid fa-circle"></i><h4>Ductile Iron Pipes & Fittings</h4></div>
+    <div class="card"><i class="fa-solid fa-circle"></i><h4>Cast Iron Pipes & Fittings</h4></div>
+    <div class="card"><i class="fa-solid fa-circle"></i><h4>Nirali Kitchen Sink</h4></div>
   </div>
 </section>
 
 <section id="contact">
-  <h2>Contact Us</h2>
-  <p style="text-align:center">
-    Have an idea or a problem to solve? We would love to hear from you.
-  </p>
-
-  <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <h3>Contact Us</h3>
+  <div class="contact">
+    <p><strong>Registered Office:</strong> Pipewala Compound, Opp. Union Bank, Near Chembur Police Station, Chembur, Mumbai – 400074</p>
+    <p><strong>Email:</strong> sales@pcorporationllp.com</p>
+    <p><strong>Phone:</strong> +91 25270661</p>
+    <p><strong>Factory:</strong> Parivali Bus Stop, Kawad (Bhiwandi), Dist. Thane</p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 MyCompany | Built with clarity & purpose</p>
+  © 2026 P & C CORPORATION LLP · Infrastructure Solutions
 </footer>
-
-<script>
-  const slides = document.querySelectorAll('.slide');
-  let index = 0;
-
-  setInterval(() => {
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-  }, 3000);
-</script>
 
 </body>
 </html>
